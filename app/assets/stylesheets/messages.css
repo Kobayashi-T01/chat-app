@@ -79,14 +79,14 @@
   padding: 20px;
 }
 
-.main_center{
+.main_centers{
   background-color: #fafafa;
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
   overflow: scroll;
 }
 
-.message{
+.main_center{
   margin: 10px 0;
 }
 
