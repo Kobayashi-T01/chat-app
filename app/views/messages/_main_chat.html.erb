@@ -11,37 +11,8 @@
   </div>
 </div>
 
-<div class="main_center">
-  <div class="message">
-    <div class="fast_message">
-      <div class="message_name">
-        Tom
-      </div>
-      <div class="message_time">
-        2020/3/31(Wed) 12:43:30
-      </div>
-    </div>
-    <div class="second_message">
-      <div class="message_text">
-        おはよう
-      </div>
-    </div>
-  </div>
-  <div class="message">
-    <div class="fast_message">
-      <div class="message_nane">
-        Mana
-      </div>
-      <div class="message_time">
-        2020/3/31(Wed) 17:00:00
-      </div>
-    </div>
-    <div class="second_message">
-      <div class="message_text">
-        こんばんわ
-      </div>
-    </div>
-  </div>
+<div class="main_centers">
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: 'main_footer', local: true do |f| %>
